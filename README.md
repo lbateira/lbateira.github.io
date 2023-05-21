@@ -1,6 +1,6 @@
 # MY ART GALLERY
 
-Host do meu site com as artes que o [Guimbreon](https://github.com/guimbreon) criou.
+Host do site criado por [Guimbreon](https://github.com/guimbreon) criou para as minhas artes.
 
 
 WEBSITE IN PRODUCTION!
