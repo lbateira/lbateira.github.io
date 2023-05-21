@@ -1,57 +1,82 @@
+/* Corpo geral do site */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 5px solid #333; /* borda */
+}
 
-      <style>
-        /* CSS styles */
-        /* Corpo geral do site */
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-        }
-        /* Cabecalho */
-        header {
-          background-color: #333;
-          color: #fff;
-          padding: 20px;
-          text-align: center;
-        }
-        /* barra de paginas dentro site */
-        nav {
-          background-color: #f4f4f4;
-          padding: 10px;
-        }
-        
-        nav ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        nav ul li {
-          display: inline;
-          margin-right: 10px;
-        }
-        /* */
-        nav ul li a {
-          color: #333;
-          text-decoration: none;
-          padding: 5px 10px;
-        }
-        /* arte em si */
-        .gallery {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-gap: 20px; /* entre arte */
-          padding: 20px; /* cima e baixo da arte */
-        }
-        
-        .gallery img {
-          width: 100%;
-          height: auto;
-        }
-        /* rodape */
-        footer {
-          background-color: #333;
-          color: #fff;
-          padding: 20px;
-          text-align: center;
-        }
-      </style>
+/* Cabecalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* barra de paginas dentro site */
+nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* arte em si */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.artwork {
+  position: relative;
+  overflow: hidden;
+}
+
+.artwork .artwork-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.artwork:hover .artwork-name {
+  opacity: 1;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* rodape */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
