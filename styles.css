@@ -106,3 +106,12 @@ footer {
   text-align: center;
   flex-shrink: 0;
 }
+
+
+/*LINKS*/
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
