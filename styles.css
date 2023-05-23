@@ -40,7 +40,7 @@ nav ul li {
   margin-right: 10px;
   flex-shrink: 0;
   min-width: 100px; /* Largura mínima do item */
-  width: 25%; /* Ajuste a porcentagem ou use 'vw' para largura responsiva */
+  width: 15%; /* Ajuste a porcentagem ou use 'vw' para largura responsiva */
 }
 
 nav ul li:last-child {
