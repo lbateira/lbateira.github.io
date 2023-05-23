@@ -32,12 +32,15 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Adiciona a opção de quebrar para nova linha */
 }
 
 nav ul li {
   display: inline;
   margin-right: 10px;
+  flex-shrink: 0; /* Evita que os itens sejam reduzidos */
 }
+
 
 nav ul li:last-child {
   margin-right: 0;
