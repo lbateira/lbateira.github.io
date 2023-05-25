@@ -69,6 +69,7 @@ nav ul li a {
 .artwork {
   position: relative;
   overflow: hidden;
+  min-width: 300px;
 }
 
 .artwork .artwork-image {
