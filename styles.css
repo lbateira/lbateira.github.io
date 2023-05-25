@@ -3,8 +3,11 @@ body {
   font-family: 'Futura', sans-serif;
   margin: 0;
   padding: 0;
-  border: 5px solid #333; /* borda */
+  border: 5px solid #333;
+  box-sizing: border-box; /* Adicionado */
 }
+
+
 @font-face {
   font-family: 'Futura';
   src: url('../font/futura/futura.woff2') format('woff2'), /* Modern Browsers */
@@ -62,9 +65,18 @@ nav ul li a {
   padding: 20px;
 }
 
+
 .artwork {
   position: relative;
   overflow: hidden;
+}
+
+.artwork .artwork-image {
+  float: left; /* Posiciona a imagem à esquerda */
+  margin-right: 20px; /* Adiciona um espaço à direita da imagem para separá-la do texto */
+  width: 300px; /* Ajuste a largura da imagem conforme necessário */
+  height: auto;
+  max-width: 100%;
 }
 
 .artwork .artwork-name {
